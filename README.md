@@ -2,9 +2,6 @@
     
 An extension provides customized course completion.
 
-# In progress.......  
-
-
 ## Installation
 
 First, be sure to install the [Adapt Command Line Interface](https://github.com/cajones/adapt-cli), then from the command line run:
