@@ -67,7 +67,7 @@ define([
         },
         
         checkCourseCompleted: function() {
-            
+            //TODO
         },
 
     });
