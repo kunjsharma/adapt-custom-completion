@@ -18,7 +18,7 @@ define([
 
         checkIsCustomCompletion: function() {
             if (!Adapt.offlineStorage) return false;
-            if (Adapt.config.has('_completionCriteria')) this.customConfig = Adapt.config.get('_completionCriteria')._custom;
+            if (Adapt.config.has('_completionCriteria')) this.customConfig = Adapt.config.get('_completionCriteria')._customCompletion;
             if(this.customConfig == undefined) return false;
             return true;
         },
