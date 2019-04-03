@@ -16,31 +16,18 @@ Or, download the ZIP and extract into the src > extensions directory and run an 
 
 ### Usage
 
-Add `_customCompletion` in course.json:
+Add `_customCompletion` in config.json:
 
 ```
-	"_customCompletion": {
-		"_isEnabled": true,
-		"title": "Menu",
-		"_items": [
-	        {
-	            "title": "Go to Menu",
-	            "_link": ""
-	        },
-	        {
-	            "title": "Presentation Components",
-	            "_link": "co-05"
-	        },
-	        {
-	            "title": "Question Components",
-	            "_link": "co-10"
-	        },
-	        {
-	            "title": "Adapt Assessment",
-	            "_link": "co-15"
-	        }
-		]
-	}
+	"_completionCriteria": {
+        "_requireContentCompleted": true,
+        "_requireAssessmentCompleted": false,
+        "_customCompletion" : {
+            "_comments": "",
+            "_requirePageVisited": "co-10",
+            "_requireComponentVisited": "c-10"
+        }
+    }
 ```
 
 * `title` Menu item title

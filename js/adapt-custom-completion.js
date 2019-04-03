@@ -37,41 +37,37 @@ define([
         },
         
         setCustomCompleted: function (pageView) {
-            var _sCurrentScreenId = pageView.model.get('_id');
-            //console.log('>>>>>> checkCourseStatus - _sCurrentScreenId - ', _sCurrentScreenId);
-            if(_sCurrentScreenId == 'co-55') {
-               /*  if(_bPreScore == undefined) _bFinalScore = _bPostScore; 
-                if(_bPostScore == undefined) _bFinalScore = _bPreScore;  */
-                Adapt.course.set('_isComplete', true);
-                Adapt.course.set('_isAssessmentPassed', this.checkCourseCompleted());
-                //TODO: score
-                //Adapt.offlineStorage.set("score", _bFinalScore, 0, 100);
-                this.setContentCompleted();
-                //console.log('>>>>>> checkCourseStatus - Adapt.course.get(_isComplete) - ', Adapt.course.get('_isComplete'));
-                //console.log('>>>>>> checkCourseStatus - Adapt.course.get(_isAssessmentPassed) - ', Adapt.course.get('_isAssessmentPassed'));
+            var _sCurrentScreenId = pageView.model.get('_id'),
+            _sPageId = this.customConfig._requirePageVisited;
+            //console.log('checkCourseStatus - _sCurrentScreenId - ', _sCurrentScreenId);
+            //Scenario 1: On visit a page.
+            console.log('_sCurrentScreenId - ', _sCurrentScreenId, ' _sPageId - ', _sPageId);
+            if(_sPageId != undefined) {
+                if(_sCurrentScreenId == _sPageId) {
+                    Adapt.course.set('_isComplete', true);
+                    //TODO: Scenario
+                    Adapt.course.set('_isAssessmentPassed', true);
+                    //TODO: score
+                    //Adapt.offlineStorage.set("score", _bFinalScore, 0, 100);
+                    this.setContentCompleted();
+                    //console.log('checkCourseStatus - Adapt.course.get(_isComplete) - ', Adapt.course.get('_isComplete'));
+                    //console.log('checkCourseStatus - Adapt.course.get(_isAssessmentPassed) - ', Adapt.course.get('_isAssessmentPassed'));
+                }
             }
+            
+            //Scenario II: On visit a component.
         },
 
         setContentCompleted: function() {
             var _sCompletionData = Adapt.offlineStorage.get('completion');
             _sCompletionData = _sCompletionData.replace(/0/g, 1);
-            //console.log('>>>>>> before setContentCompleted - Adapt.offlineStorage.get(completion)', Adapt.offlineStorage.get('completion'));
+            //console.log('before setContentCompleted - Adapt.offlineStorage.get(completion)', Adapt.offlineStorage.get('completion'));
             Adapt.offlineStorage.set('completion', _sCompletionData);
-            //console.log('>>>>>> after setContentCompleted - Adapt.offlineStorage.get(completion)', Adapt.offlineStorage.get('completion'));
+            //console.log('after setContentCompleted - Adapt.offlineStorage.get(completion)', Adapt.offlineStorage.get('completion'));
         },
         
         checkCourseCompleted: function() {
-            /*var _aModuleCompletionStatus = Adapt.RoutingAndRecordKeeping.moduleCompletionStatus,
-                _nModuleCompletionStatusLen = _aModuleCompletionStatus.length,
-                _bAllSectionsPassed = true;
-            for(var i=0;i<_nModuleCompletionStatusLen;i++) {
-                if(_aModuleCompletionStatus[i] == false) {
-                    _bAllSectionsPassed = false;
-                    break;
-                }
-            }
-
-            return _bAllSectionsPassed;*/
+            
         },
 
     });
