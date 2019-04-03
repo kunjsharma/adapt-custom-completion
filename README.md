@@ -23,15 +23,15 @@ Add `_customCompletion` in config.json:
         "_requireContentCompleted": true,
         "_requireAssessmentCompleted": false,
         "_customCompletion" : {
-            "_comments": "",
             "_requirePageVisited": "co-10",
             "_requireComponentVisited": "c-10"
         }
     }
 ```
 
-* `title` Menu item title
-* `_link` Link to page. Empty sends to main menu.
+* `_requiresPageVisited` Completes the course on a page visit.
+* `_requiresComponentVisited` Completes the course on a component visit. In progress...
+* `_requires#` Contributors are welocome to add more custom completion scenarios
 
 
 ### Limitations
