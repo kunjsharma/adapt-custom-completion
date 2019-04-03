@@ -1,0 +1,25 @@
+{
+    "name": "adapt-custom-completion",
+    "version": "0.0.1",
+    "framework": "^3.2.1",
+    
+    "homepage": "https://github.com/kunjsharma/adapt-custom-completion",
+  "issues": "https://github.com/kunjsharma/adapt-custom-completion",
+  "displayName" : "CustomCompletion",
+    "component" : "customCompletion",
+    "description": "An extension provides customized course completion.",
+    "authors": [
+        "Kunj B Sharma <kunjsharma@hotmail.com>"
+    ],
+    "description": "An extension provides customized course completion.",
+    "main": "/js/adapt-custom-completion.js",
+  "authors": [
+        "Kunj B Sharma <kunjsharma@hotmail.com>"
+    ],
+    "keywords": [
+        "adapt-plugin",
+        "adapt-extension",
+        "adapt-custom-completion"
+    ],
+    "license": "GPLv3"
+}
