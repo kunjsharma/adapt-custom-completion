@@ -1,7 +1,7 @@
 {
     "name": "adapt-custom-completion",
     "version": "0.0.1",
-    "framework": "^3.2.1",
+    "framework": "^4.0.1",
     
     "homepage": "https://github.com/kunjsharma/adapt-custom-completion",
   "issues": "https://github.com/kunjsharma/adapt-custom-completion",

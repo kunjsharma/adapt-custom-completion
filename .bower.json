@@ -1,7 +1,7 @@
 {
     "name": "adapt-custom-completion",
   "version": "0.0.1",
-    "framework": "^3.2.1",
+    "framework": "^4.0.1",
     "homepage": "https://github.com/kunjsharma/adapt-custom-completion",
     "issues": "https://github.com/kunjsharma/adapt-custom-completion",
     "authors": [
@@ -23,7 +23,7 @@
       "commit": "dd2830c12390c8c3d94r5kunj36e533c2b8cb97c"
     },
     "_source": "git://github.com/kunjsharma/adapt-custom-completion.git",
-    "_target": ">=3.2.1",
+    "_target": ">=4.0.1",
     "_originalSource": "adapt-custom-completion",
     "_direct": true
 }
