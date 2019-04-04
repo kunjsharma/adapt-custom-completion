@@ -23,7 +23,7 @@
       "commit": "dd2830c12390c8c3d94r5kunj36e533c2b8cb97c"
     },
     "_source": "git://github.com/kunjsharma/adapt-custom-completion.git",
-    "_target": ">=2.0.3",
+    "_target": ">=3.2.1",
     "_originalSource": "adapt-custom-completion",
     "_direct": true
 }
