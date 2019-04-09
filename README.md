@@ -1,6 +1,6 @@
 # adapt-custom-completion  
     
-An extension provides customized course completion.
+An extension that provides customised course completion.
 
 ## Installation
 
