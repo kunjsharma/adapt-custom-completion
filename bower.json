@@ -21,6 +21,6 @@
         "adapt-extension",
         "adapt-custom-completion"
     ],
-    "license": "GPLv3"
+    "license": "GPLv3",
 	"targetAttribute": "_custom-completion"
 }
