@@ -6,7 +6,7 @@
     "homepage": "https://github.com/kunjsharma/adapt-custom-completion",
   "issues": "https://github.com/kunjsharma/adapt-custom-completion",
   "displayName" : "CustomCompletion",
-    "extension" : "customCompletion",
+    "extension" : "custom-completion",
     "description": "An extension that provides customised course completion.",
     "main": "/js/adapt-custom-completion.js",
     "authors": [
