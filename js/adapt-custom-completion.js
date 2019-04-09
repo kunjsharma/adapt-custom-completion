@@ -50,20 +50,16 @@ define([
                     //TODO: score
                     //Adapt.offlineStorage.set("score", _bFinalScore, 0, 100);
                     this.setContentCompleted();
-                    //console.log('checkCourseStatus - Adapt.course.get(_isComplete) - ', Adapt.course.get('_isComplete'));
-                    //console.log('checkCourseStatus - Adapt.course.get(_isAssessmentPassed) - ', Adapt.course.get('_isAssessmentPassed'));
                 }
             }
             
-            //Scenario II: On visit a component.
+            //TODO: Scenario II: On visit a component.
         },
 
         setContentCompleted: function() {
             var _sCompletionData = Adapt.offlineStorage.get('completion');
             _sCompletionData = _sCompletionData.replace(/0/g, 1);
-            //console.log('before setContentCompleted - Adapt.offlineStorage.get(completion)', Adapt.offlineStorage.get('completion'));
             Adapt.offlineStorage.set('completion', _sCompletionData);
-            //console.log('after setContentCompleted - Adapt.offlineStorage.get(completion)', Adapt.offlineStorage.get('completion'));
         },
         
         checkCourseCompleted: function() {
