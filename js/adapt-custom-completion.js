@@ -38,34 +38,27 @@ define([
         
         setCustomCompleted: function (pageView) {
             var _sCurrentScreenId = pageView.model.get('_id'),
-            _sPageId = this.customConfig._requirePageVisited;
-            //console.log('checkCourseStatus - _sCurrentScreenId - ', _sCurrentScreenId);
-            //Scenario 1: On visit a page.
+                _sPageId = this.customConfig._requirePageVisited;
+
+            //Scenario I: On visit a page.
             console.log('_sCurrentScreenId - ', _sCurrentScreenId, ' _sPageId - ', _sPageId);
             if(_sPageId != undefined) {
                 if(_sCurrentScreenId == _sPageId) {
                     Adapt.course.set('_isComplete', true);
-                    //TODO: Scenario
                     Adapt.course.set('_isAssessmentPassed', true);
-                    //TODO: score
-                    //Adapt.offlineStorage.set("score", _bFinalScore, 0, 100);
                     this.setContentCompleted();
                 }
             }
             
-            //TODO: Scenario II: On visit a component.
+            //Scenario II: On visit a component. In progress...
+
         },
 
         setContentCompleted: function() {
             var _sCompletionData = Adapt.offlineStorage.get('completion');
             _sCompletionData = _sCompletionData.replace(/0/g, 1);
             Adapt.offlineStorage.set('completion', _sCompletionData);
-        },
-        
-        checkCourseCompleted: function() {
-            //TODO
-        },
-
+        }
     });
 
     return new CustomCompletion();
