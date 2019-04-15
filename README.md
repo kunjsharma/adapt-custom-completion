@@ -40,6 +40,6 @@ Developed to work with framework, `properties.schema` requires to edit compatibl
 Intended to develop standard Adapt browser/devices specification.
 
 ----------------------------
-**Version:**  1.0.1 
-**Framework version:** >=3.2
-**Author/maintainer:** Kunj B Sharma <kunjsharma@hotmail.com>     
+**Version:**  1.0.1  
+**Framework version:** >=3.2  
+**Author/maintainer:** Kunj B Sharma <kunjsharma@hotmail.com>  
