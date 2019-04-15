@@ -1,6 +1,6 @@
 {
     "name": "adapt-custom-completion",
-    "version": "0.0.1",
+    "version": "1.0.1",
     "framework": ">=3.2",
     "homepage": "https://github.com/kunjsharma/adapt-custom-completion",
     "issues": "https://github.com/kunjsharma/adapt-custom-completion",
@@ -19,7 +19,7 @@
     ],
     "license": "GPLv3",
     "targetAttribute": "_custom-completion",
-    "_release": "0.0.1",
+    "_release": "1.0.1",
     "_resolution":
     {
         "type": "version",
