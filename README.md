@@ -35,10 +35,6 @@ Add `_customCompletion` in config.json:
 
 Developed to work with framework, `properties.schema` requires to edit compatiblity with authoring tool. Contributors are welcome.
 
-### Browser/platform specification
-
-Intended to develop standard Adapt browser/devices specification.
-
 ----------------------------
 **Version:**  1.0.1  
 **Framework version:** >=3.2  
