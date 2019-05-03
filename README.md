@@ -33,7 +33,7 @@ Add `_customCompletion` in config.json:
 
 ### Limitations
 
-Developed to work with framework, `properties.schema` requires to edit compatiblity with authoring tool. Contributors are welcome.
+Developed to work with framework, `properties.schema` requires to edit compatiblity with authoring tool.
 
 ----------------------------
 **Version:**  1.0.1  
