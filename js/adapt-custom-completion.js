@@ -32,9 +32,9 @@ define([
             //TODO:
         },
 
-        setCustomCompleted: function(menuView) {
+        /*setCustomCompleted: function(menuView) {
             var menuModel = menuView.model;
-        },
+        },*/
         
         setCustomCompleted: function (pageView) {
             var _sCurrentScreenId = pageView.model.get('_id'),
@@ -45,6 +45,7 @@ define([
             if(_sPageId != undefined) {
                 if(_sCurrentScreenId == _sPageId) {
                     Adapt.course.set('_isComplete', true);
+                    //Please see _requireAssessmentCompleted/lms configuration before setting stiffly
                     Adapt.course.set('_isAssessmentPassed', true);
                     this.setContentCompleted();
                 }
