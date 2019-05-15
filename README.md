@@ -1,6 +1,6 @@
 # adapt-custom-completion  
     
-An extension that provides customised course completion.
+An extension that provides customised course completion: i.e. - learner goes to summary/final page skipping page(s), a component (in progress...) etc. In short, this extension have capability to allows developer to complete the course apart from complete all content and assessment passed criteria that comes with core completion criteria in Adapt. This may useful when course have branching, conditional navigaiton or similar functionality.
 
 ## Installation
 
