@@ -26,9 +26,9 @@ Add `_customCompletion` in config.json:
     }
 ```
 
-* `_requiresPageVisited` Completes the course on a page visit.
-* `_requiresComponentVisited` Completes the course on a component visit. In progress...
-* `_requires....` Contributors/Suggestions are welcome to add more custom completion scenarios.
+* `_requirePageVisited` Completes the course on page visit.
+* `_requireComponentVisited` Completes the course on component visit. In progress...
+* `_require....` Contributors/Suggestions are welcome to add more custom completion scenarios.
 
 
 ### Limitations
