@@ -9,7 +9,7 @@
     "description": "An extension that provides customised course completion.",
     "main": "/js/adapt-custom-completion.js",
     "authors": [
-        "Kunj B Sharma <kunjsharma@hotmail.com>"
+        "Kunj <kunjsharma@hotmail.com>"
     ],
 
     "keywords": [

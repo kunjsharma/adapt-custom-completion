@@ -38,4 +38,4 @@ Developed to work with framework, `properties.schema` requires to edit compatibl
 ----------------------------
 **Version:**  1.0.1  
 **Framework version:** >=3.2  
-**Author/maintainer:** Kunj B Sharma <kunjsharma@hotmail.com>  
+**Author/maintainer:** Kunj <kunjsharma@hotmail.com>  
