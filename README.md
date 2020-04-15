@@ -1,6 +1,6 @@
 # adapt-custom-completion  
     
-Adapt custom completion provides functionality of course completion out of the way (i.e.: developer can skip learner to visit all pages instead a page/component e.g. summary/conclusion to complete the course) instead of complete content and/or pass the assessment that are default in Adapt. Useful when course have branching, conditional navigaiton or similar functionality.
+Provides functionality of course completion out of the way (i.e.: developer can skip learner to visit all pages instead a page/component e.g. summary/conclusion to complete the course) instead of complete content and/or pass the assessment that are default in Adapt. Useful when course have branching, conditional navigaiton or similar functionality.
 
 ## Installation
 
